@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container py-4">
+    <h1 class="display-3" id="timer">10</h1>
+    <div class="timeline mb-4">
+      <div class="time" id="time"></div>
+    </div>
+    <div class="question-panel box mt-2 mt-sm-5">
+      <span id="question"></span> = <span id="answer">?</span>
+    </div>
+    <div class="row mt-5 pt-0 pt-sm-4 justify-content-center">
+      <div class="col-9 col-md-10 col-lg-8 col-xl-7">
+        <div class="row">
+          <div class="col-6 col-sm-3 mb-2">
+            <div class="box case"></div>
+          </div>
+          <div class="col-6 col-sm-3 mb-2">
+            <div class="box case"></div>
+          </div>
+          <div class="col-6 col-sm-3 mb-2">
+            <div class="box case"></div>
+          </div>
+          <div class="col-6 col-sm-3 mb-2">
+            <div class="box case"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="level">level: <span id="level">1</span></div>
+  <a href="https://algorismic.uz" class="d-inline-block mb-4" target="_blank">
+    <img src="./img/logo.png" class="logo" alt="" />
+  </a>
+
+
+  <div id="gameModal" class="d-none">
+    <div id="win" class="panel d-none">
+      <img src="img/win.png" alt="">
+      <h1>Congratulations. New record: <span id="lastLevelWin">10</span></h1>
+      <button class="btn text-white fs-1 mb-0 shadow-none" onclick="init()">
+        <i class="fas fa-redo-alt    "></i>
+      </button>
+    </div>
+    <div id="lose" class="panel d-none">
+      <img src="img/lose.png" alt="">
+      <h1>Game Over</h1>
+      <h1>Level: <span id="lastLevelLose">10</span></h1>
+      <button class="btn text-white fs-1 mb-0 shadow-none" onclick="init()">
+        <i class="fas fa-redo-alt    "></i>
+      </button>
+    </div>
+  </div>
+
+  <audio src="" id="player"></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

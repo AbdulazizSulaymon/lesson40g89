@@ -1,0 +1,117 @@
+body {
+  background-image: url("./../img/back.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center top;
+  color: white !important;
+  font-family: "Montserrat", sans-serif !important;
+  text-align: center !important;
+  font-weight: 900 !important;
+}
+
+h1 {
+  text-shadow: 0 6px 10px rgba(0, 0, 0, 0.35);
+}
+
+.timeline {
+  margin: 0 auto;
+  width: 400px;
+  height: 16px;
+  border-radius: 10px;
+  background-color: #c4c4c4;
+  overflow: hidden;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.35);
+}
+.timeline .time {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #161f6c;
+}
+
+.box {
+  font-size: 40px;
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: 0 14px 24px 0 rgba(0, 0, 0, 0.4);
+  background-color: white;
+  color: #1d2092;
+  display: inline-block;
+  user-select: none;
+  min-width: 100px;
+}
+
+.level {
+  color: white;
+  font-size: 40px;
+  text-shadow: 0 6px 10px rgba(0, 0, 0, 0.35);
+  position: fixed;
+  top: 20px;
+  left: 40px;
+}
+
+.success {
+  background-color: #5cc15a;
+}
+
+.error {
+  background-color: #ed2929;
+}
+
+.case {
+  cursor: pointer;
+  transition: 0.1s;
+}
+.case:hover {
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.65);
+  transform: scale(1.02) translateY(-2px);
+}
+
+#gameModal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(4, 9, 23, 0.8);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#gameModal .panel {
+  max-width: 500px;
+  min-width: 400px;
+  margin: 0 15px;
+  padding: 40px 25px 5px;
+  color: white !important;
+  font-size: 40px;
+  background-color: gray;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+#gameModal .panel img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80px;
+}
+#gameModal #win {
+  background: linear-gradient(104.24deg, #339f58 1.54%, rgba(21, 74, 39, 0.8) 100%);
+}
+#gameModal #lose {
+  background: linear-gradient(104.93deg, #f25e5e 1.21%, rgba(85, 9, 9, 0.8) 94.94%);
+}
+
+@media screen and (max-width: 600px) {
+  .level {
+    font-size: 26px;
+    top: 10px;
+    left: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
